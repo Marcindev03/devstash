@@ -10,6 +10,8 @@
 ## React
 
 - Functional components only (no class components)
+- Use `const ComponentName = () => {}` syntax for components (avoid `function ComponentName() {}`)
+- Keep `layout.tsx` and `page.tsx` files in their existing style unless explicitly requested
 - Use hooks for state and side effects
 - Keep components focused - one job per component
 - Extract reusable logic into custom hooks
@@ -46,6 +48,7 @@ Example v4 configuration:
 @theme {
   --color-primary: oklch(50% 0.2 250);
 }
+```
 
 ## File Organization
 
@@ -94,4 +97,3 @@ Example v4 configuration:
 - No commented-out code unless specified
 - No unused imports or variables
 - Keep functions under 50 lines when possible
-```
